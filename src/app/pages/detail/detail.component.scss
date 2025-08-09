@@ -1,0 +1,72 @@
+.character {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.example-card {
+  width: 100%;
+  max-width: 400px;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.name-characters {
+  color: orangered;
+}
+
+
+.character img {
+  max-height: 270px;
+  object-fit: contain;
+}
+
+.ball-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.ball-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+mat-card-content {
+  flex: 1;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+
+.btn-dragon {
+  background-color: #ff9800;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(255, 152, 0, 0.6);
+}
+
+.btn-dragon:hover {
+  background-color: #e68900;
+  box-shadow: 0 0 16px rgba(255, 152, 0, 0.9);
+}

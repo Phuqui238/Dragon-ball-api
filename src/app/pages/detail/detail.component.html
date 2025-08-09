@@ -1,0 +1,28 @@
+<div class="character">
+  @if (this.characterDetail$ | async; as characterDetail) {
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="name-characters">{{characterDetail.name}}</mat-card-title>
+        <mat-card-subtitle>Ki: {{characterDetail.ki}}</mat-card-subtitle>
+        <mat-card-subtitle>Max Ki: {{characterDetail.maxKi}}</mat-card-subtitle>
+        <mat-card-subtitle>Race: {{characterDetail.race}}</mat-card-subtitle>
+      </mat-card-header>
+
+      <div class="ball-image">
+        <img mat-card-image src="https://png.pngtree.com/png-clipart/20230102/original/pngtree-4-dragon-ball-icon-vector-drgon-illustrtion-png-image_8856270.png" alt="">
+      </div>
+
+      <img mat-card-image [src]="characterDetail.image">
+
+      <mat-card-content>
+        <p>{{characterDetail.description}}</p>
+      </mat-card-content>
+
+      <mat-card-actions class="button">
+        <button mat-button class="btn-dragon">LIKE</button>
+        <button mat-button class="btn-dragon">SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  }
+</div>
