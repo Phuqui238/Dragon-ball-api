@@ -1,33 +1,11 @@
-.character {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
 .example-card {
   width: 100%;
   max-width: 400px;
-  max-height: 100vh;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-.example-header-image {
-  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-
-.name-characters {
-  color: orangered;
-}
-
-
-.character img {
-  max-height: 270px;
-  object-fit: contain;
+  box-shadow: 0 0 10px rgba(50, 205, 50, 0.6);
 }
 
 .ball-image {
@@ -44,17 +22,32 @@
   object-fit: contain;
 }
 
+.name-characters{
+  color: orangered;
+}
+
 mat-card-content {
   flex: 1;
 }
 
-mat-card-actions {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: auto;
 }
 
+.character {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character img {
+  max-height: 300px;
+  object-fit: contain;
+}
 
 .btn-dragon {
   background-color: #ff9800;
